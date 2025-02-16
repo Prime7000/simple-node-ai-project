@@ -3,7 +3,7 @@ import { env,pipeline } from '@xenova/transformers';
 env.cacheDir = 'models';
 
 // Create a sentiment analysis pipeline.
-const classifier = await pipeline('sentiment-analysis', 'distilbert/distilbert-base-uncased-finetuned-sst-2-english');
+const classifier = await pipeline('sentiment-analysis', 'Xenova/distilbert-base-uncased-finetuned-sst-2-english');
 
 // Perform sentiment analysis.
 const positiveResult = await classifier('I love using transformers.js!');

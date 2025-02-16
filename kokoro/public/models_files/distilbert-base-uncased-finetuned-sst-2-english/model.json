@@ -1,0 +1,8 @@
+{
+    "format": "onnx",
+    "model_rel_path": "onnx/model_quantized.onnx",
+    "config": {
+      "_name_or_path": "distilbert-base-uncased-finetuned-sst-2-english"
+    }
+  }
+  
