@@ -17,7 +17,9 @@ env.allowLocalModels = true;          // Enable local file loading
 env.allowRemoteModels = false; 
 
 // Create a sentiment analysis pipeline.
-const classifier = await pipeline('sentiment-analysis', 'distilbert-base-uncased-finetuned-sst-2-english');
+const classifier = await pipeline('sentiment-analysis', 'distilbert-base-uncased-finetuned-sst-2-english',{
+     device:'wasm'
+});
 
 // Perform sentiment analysis.
 const positiveResult = await classifier('we won');
